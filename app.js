@@ -65,7 +65,7 @@ function createSlideShow(e) {
         `);
 
         deleteFirstPhotoDelay = setTimeout(() => {
-            document.querySelector("slider").remove();
+            document.querySelector(".slider").remove();
         }, 1000);
 
         if (currentPosition + 1 >= e.length) {
