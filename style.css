@@ -1,0 +1,341 @@
+body{
+    overflow-x: hidden;
+}
+
+div#slider-container {
+    overflow: hidden;
+    position: relative;
+    height: 550px;
+}
+
+div#slider-container .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(230, 230, 230); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0;
+    transition: all .9s ease-out;
+}
+
+div#slider-container .slider:nth-last-child(2) {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+h4#breedcount {
+    text-transform: uppercase;
+    margin: 12px auto 30px auto;
+}
+
+h4#breedcount span {
+    color: tomato;
+    font-weight: bold;
+    animation-name: breedapi;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    background: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    line-height: 44px;
+}
+
+/* The animation code */
+@keyframes breedapi {
+    0% {
+        color: rgb(157, 255, 0);
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        color: rgb(206, 168, 0);
+        left: 200px;
+        top: 0px;
+        
+    }
+
+    50% {
+        color: rgb(1, 212, 177);
+        left: 200px;
+        top: 200px;
+        
+    }
+
+    75% {
+        color: rgba(6, 176, 228, 0.335);
+        left: 0px;
+        top: 200px;
+        
+    }
+
+    100% {
+        color: rgba(168, 230, 0, 0.972);
+        left: 0px;
+        top: 0px;
+        
+    }
+}
+
+/**
+ * Css buble animation 
+ */
+.body-animation{
+    opacity: .08;
+}
+.a-one {
+    width: 100px;
+    height: 100px;
+    background-color: #bf4141;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    animation: MoveUpDown 5s linear infinite;
+}
+
+.a-two {
+    width: 150px;
+    height: 150px;
+    background-color: #bf4141;
+    opacity: 0.7;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    left: 200px;
+    animation: MoveUpDownTwo 9s linear infinite;
+}
+
+.a-three {
+    width: 120px;
+    height: 120px;
+    background-color: #bf4141;
+    opacity: 0.2;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 120px;
+    left: 300px;
+    animation: MoveUpDownThree 5s linear infinite;
+}
+
+.a-four {
+    width: 80px;
+    height: 80px;
+    background-color: #bf4141;
+    opacity: 0.4;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: MoveUpDownFour 15s linear infinite;
+}
+
+.a-five {
+    width: 50px;
+    height: 50px;
+    background-color: #bf4141;
+    opacity: 0.9;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    animation: MoveUpDownFive 8s linear infinite;
+}
+
+.a-six {
+    width: 175px;
+    height: 175px;
+    background-color: #bf4141;
+    opacity: 0.6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 250px;
+    right: 200px;
+    animation: MoveUpDownSix 7s linear infinite;
+}
+
+.a-seven {
+    width: 250px;
+    height: 250px;
+    background-color: #bf41419e;
+    opacity: 0.3;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+    right: 0;
+    animation: MoveUpDownSeven 6s linear infinite;
+}
+
+.a-eight {
+    width: 75px;
+    height: 75px;
+    background-color: #bf4141;
+    opacity: 0.4;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 350px;
+    animation: MoveUpDownEight 11s linear infinite;
+}
+
+.a-nine {
+    width: 45px;
+    height: 45px;
+    background-color: #bf4141;
+    opacity: 0.7;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+    animation: MoveUpDownNine 12s linear infinite;
+}
+
+.a-ten {
+    width: 150px;
+    height: 150px;
+    background-color: #bf4141;
+    opacity: 0.6;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: MoveUpDownTen 14s linear infinite;
+}
+
+@keyframes a-one {
+    from {
+        top: 0;
+        left: 0;
+    }
+
+    to {
+        top: 100px;
+        left: 100px;
+    }
+}
+
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 300px;
+    }
+}
+
+@keyframes MoveUpDownTwo {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    50% {
+        bottom: 500px;
+    }
+}
+
+@keyframes MoveUpDownThree {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 400px;
+    }
+}
+
+@keyframes MoveUpDownFour {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 350px;
+    }
+}
+
+@keyframes MoveUpDownFive {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 250px;
+    }
+}
+
+@keyframes MoveUpDownSix {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 500px;
+    }
+}
+
+@keyframes MoveUpDownSeven {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 375px;
+    }
+}
+
+@keyframes MoveUpDownEight {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 370px;
+    }
+}
+
+@keyframes MoveUpDownNine {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 475px;
+    }
+}
+
+@keyframes MoveUpDownTen {
+
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 500px;
+    }
+}
