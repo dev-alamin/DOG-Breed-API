@@ -339,3 +339,17 @@ h4#breedcount span {
         bottom: 500px;
     }
 }
+
+
+/**
+ * Responsive 
+ */
+@media(max-width:550px) {
+    div#sliderContainer {
+        height: 350px;
+    }
+    h4#breedcount {
+        text-transform: uppercase;
+        margin: 12px auto 10px auto;
+    }
+}
