@@ -77,4 +77,4 @@ function createSlideShow(e) {
 
 }
 
-console.log('Hello world');
+// console.log('Hello world');
