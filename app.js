@@ -76,3 +76,5 @@ function createSlideShow(e) {
     }
 
 }
+
+console.log('Hello world');
